@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Base button styling */
+.button {
+  background-color: #007BFF; /* Primary blue background */
+  color: white; /* White text */
+  padding: 10px 20px; /* Vertical and horizontal padding */
+  font-size: 16px; /* Text size */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  text-align: center; /* Centered text */
+  display: inline-block; /* Inline-block display */
+  text-decoration: none; /* No underline */
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight raise effect */
+}
+
+/* Active effect */
+.button:active {
+  background-color: #004085; /* Even darker blue when clicked */
+  transform: translateY(1px); /* Pressed down effect */
+}
+
+/* Focus effect for keyboard navigation */
+.button:focus {
+  outline: 3px solid #80bdff; /* Light blue outline */
+  outline-offset: 2px; /* Space between button and outline */
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+  margin: 0;
+}
